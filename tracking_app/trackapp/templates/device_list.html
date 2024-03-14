@@ -1,0 +1,16 @@
+<!-- assets_tracking/templates/device_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Device List</title>
+</head>
+<body>
+    <h1>Device List</h1>
+    <ul>
+        {% for device in devices %}
+            <li>{{ device.name }} - {{ device.company.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

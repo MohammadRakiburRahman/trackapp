@@ -1,0 +1,16 @@
+<!-- assets_tracking/templates/add_device_log.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Device Log</title>
+</head>
+<body>
+    <h1>Add Device Log</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

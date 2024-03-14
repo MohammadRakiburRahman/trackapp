@@ -1,0 +1,16 @@
+<!-- assets_tracking/templates/device_log_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Device Log List</title>
+</head>
+<body>
+    <h1>Device Log List</h1>
+    <ul>
+        {% for device_log in device_logs %}
+            <li>{{ device_log.device.name }} - {{ device_log.employee.user.username }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
